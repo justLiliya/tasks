@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function triangle(a, b, c, p) {
+        var a = parseInt(prompt('Сторона a'));
+        var b = parseInt(prompt('Сторона b'));
+        var c = parseInt(prompt('Сторона с'));
+        var p = (a + b + c) / 2;
+        return (p * (p - a) * (p - b) * (p - c)) ** 0.5;
+
+    }
+    var test = triangle();
+    alert(test);
+
+</script>
+
+</body>
+</html>

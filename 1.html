@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var X = prompt('Сколько нужно спать?');
+    var Y = prompt('Столько спать вредно?');
+    var Z = prompt ('Столько спит Аня?');
+
+    function AnyaSleep (X, Y, Z) {
+        if (Z < X) {
+            alert('Недосып');
+        } else if (Z > Y) {
+            alert('Пересып');
+        } else {
+            alert('Это нормально');
+        }
+    }
+
+        AnyaSleep(X, Y, Z)
+
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num1 = parseInt(prompt("первое число"));
+    var num2 = parseInt(prompt('второе число'));
+    var operation = prompt("операция");
+    var result;
+
+    function calculator(num1, num2, operation) {
+
+        if (operation == '+') {
+            return result = num1 + num2;
+        } else if (operation == '-') {
+            return result = num1 - num2;
+        } else if (operation == "*") {
+            return result = num1 * num2;
+        } else if (operation == "/" && num2 !== 0) {
+            return result = num1 / num2;
+        } else if (operation == "/" && num2 == 0) {
+            return result = "Деление на 0";
+        } else if (operation == "mod") {
+            return result = num1 % num2;
+        } else if (operation == "pov") {
+            return result = num1 ** num2;
+        } else if (operation == "div" && num2 !== 0) {
+            return result = Math.floor(num1 / num2);
+        } else if (operation == "div" && num2 == 0) {
+            return result = "Деление на 0";
+        } else {
+            console.log('test');
+        }
+    }
+    alert(calculator(num1, num2, operation));
+</script>
+
+</body>
+</html>
