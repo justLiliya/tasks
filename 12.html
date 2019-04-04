@@ -1,0 +1,34 @@
+/**Для описания прямоугольника используется объект вида {a: X, b: Y},
+где X, Y - длинысторон прямоугольника. Напишите функцию, которая
+на вход принимает неотрицательное число k. Эта функция будет
+возвращать прямоугольник, стороныкоторого пропорционально изменены в k раз.
+*/
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        var figure = Object({a: 2, b: 4});
+        var k = parseInt(prompt("Введите число"));
+        var s = figure.a * figure.b
+        
+        function change(k) {
+            if (k > 0)
+                alert(s = (figure.a * k)*(figure.b * k));
+            else
+                alert("Введите в следующий раз значение больше 0");
+
+        }
+        change(k)
+
+
+
+        </script>
+</head>
+<body>
+
+</body>
+</html>
