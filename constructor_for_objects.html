@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+ var point = new Object();
+ point.x = 10; //Добавляем в объект новое свойство х и даем ему значение
+    point.y = 15 //По аналогии с х
+    //При добавлении в объект функции мы добавляем уже ен свойсво а метод, который обуславливает поведение
+    point.f = function () {
+        document.write("<p>x = " + point.x + "<p>y = " + point.y)
+    }
+    point.f(); //Вызов
+    point.x = 20; //Меняем свойство х
+    point.f()
+
+    </script>
+
+</body>
+</html>
