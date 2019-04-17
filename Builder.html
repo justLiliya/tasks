@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Builder</title>
+</head>
+<body>
+<script>
+    var builder = new Object();
+    builder.createRoof = function () {
+        document.write("<img src= "Images/Roof.gif"/><br/>);
+    };
+    builder.createFirstFloor = function () {
+        document.write("<img src= "Images/Floor.gif"/><br/>);
+    };
+    builder.createSecondFloor = function () {
+        document.write("<img src= "Images/SecondFloor.gif"/><br/>);
+    };
+    builder.createBasement = function () {
+        document.write("<img src= Images/Basement.gif"><br/>);
+    };
+    //Строительство дома
+
+    builder.createRoof();
+    builder.createFirstFloor();
+    builder.createSecondFloor();
+    builder.createBasement();
+
+</script>
+</body>
+</html>
